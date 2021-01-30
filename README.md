@@ -18,8 +18,8 @@ The app has been developed with React, in particular with the following tools:
 
 The project is liked to a codesandbox space at these links:
 
-- full code sandbox: https://codesandbox.io/s/headless-frog-545t1
-- preview: https://545t1.csb.app/
+- full code sandbox: https://codesandbox.io/s/hardcore-hill-wof6m
+- preview: https://wof6m.csb.app/
 
 ## Resources
 
