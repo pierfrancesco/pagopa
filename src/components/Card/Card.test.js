@@ -6,7 +6,7 @@ import Card from './Card';
 describe('<Card />', () => {
   test('it should mount', () => {
     render(<Card />);
-    
+
     const card = screen.getByTestId('Card');
 
     expect(card).toBeInTheDocument();

@@ -6,7 +6,7 @@ import Filter from './Filter';
 describe('<Filter />', () => {
   test('it should mount', () => {
     render(<Filter />);
-    
+
     const filter = screen.getByTestId('Filter');
 
     expect(filter).toBeInTheDocument();

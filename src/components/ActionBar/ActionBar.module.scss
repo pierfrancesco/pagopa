@@ -8,13 +8,10 @@
   margin: 15px;
   flex-wrap: wrap;
 
-  .LeftSideContent {
-
-  }
-
   .RightSideContent {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 
     .Sort {
       display: flex;
@@ -54,7 +51,15 @@
           text-decoration: underline;
         }
       }
+
+      .clear {
+        cursor: pointer;
+      }
     }
+  }
+
+  .LeftSideContent {
+    // TODO
   }
 
   @media (max-width: 640px) {

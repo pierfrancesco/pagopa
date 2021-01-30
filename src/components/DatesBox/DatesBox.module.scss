@@ -21,6 +21,7 @@
   @media (max-width: 1080px) {
     font-size: 12px;
     width: 25%;
+
     div {
       flex-direction: column;
     }
@@ -29,5 +30,4 @@
   @media (max-width: 640px) {
     font-size: 10px;
   }
-
 }

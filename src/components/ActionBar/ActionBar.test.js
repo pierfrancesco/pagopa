@@ -6,7 +6,7 @@ import ActionBar from './ActionBar';
 describe('<ActionBar />', () => {
   test('it should mount', () => {
     render(<ActionBar />);
-    
+
     const actionBar = screen.getByTestId('ActionBar');
 
     expect(actionBar).toBeInTheDocument();

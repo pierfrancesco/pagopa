@@ -12,17 +12,17 @@ import Tag from '../Tag/Tag';
 const choseTagColor = (type) => {
   switch (type) {
     case 'feature':
-      return "Violet";
+      return 'Violet';
     case 'chore':
-      return "Orange"
+      return 'Orange';
     case 'bug':
-      return "Red";
+      return 'Red';
     case 'release':
-      return "Acqua"
+      return 'Acqua';
     default:
   }
   return '';
-}
+};
 
 /**
  *
@@ -30,27 +30,30 @@ const choseTagColor = (type) => {
  * @returns {*}
  * @constructor
  */
-const InfoBox = ({kind, id, story_type, current_state, estimate}) => (
+const InfoBox = ({
+  kind, id, storyType, currentState, estimate,
+}) => (
   <div className={styles.InfoBox} data-testid="InfoBox">
     <div className={styles.Content}>
-      <Tag name={kind}/>
+      <Tag name={kind} />
       <div>
-        <span >ID:</span>
+        <span>ID:</span>
         <span className={styles.Label}>{id}</span>
       </div>
     </div>
 
     <div className={styles.Content}>
-      <Tag name={story_type} color={choseTagColor(story_type)}/>
+      <Tag name={storyType} color={choseTagColor(storyType)} />
     </div>
 
-
     <div className={styles.Content}>
-      <Tag name={current_state} color={"Green"}/>
-      {estimate && <div>
-        <span >Estimate:</span>
+      <Tag name={currentState} color="Green" />
+      {estimate && (
+      <div>
+        <span>Estimate:</span>
         <span className={styles.Label}>{estimate}</span>
-      </div>}
+      </div>
+      )}
     </div>
 
   </div>
@@ -59,11 +62,13 @@ const InfoBox = ({kind, id, story_type, current_state, estimate}) => (
 InfoBox.propTypes = {
   kind: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
-  story_type: PropTypes.string.isRequired,
-  current_state: PropTypes.string.isRequired,
-  estimate: PropTypes.string
+  storyType: PropTypes.string.isRequired,
+  currentState: PropTypes.string.isRequired,
+  estimate: PropTypes.string,
 };
 
-InfoBox.defaultProps = {};
+InfoBox.defaultProps = {
+  estimate: null,
+};
 
 export default InfoBox;

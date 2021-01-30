@@ -8,7 +8,7 @@ import styles from './Header.module.scss';
  * @returns {*}
  * @constructor
  */
-const Header = ({title = 'Header Component'}) => (
+const Header = ({ title }) => (
   <div className={styles.Header} data-testid="Header">
     <div className={styles.AppName}>
       {title}
@@ -17,7 +17,7 @@ const Header = ({title = 'Header Component'}) => (
 );
 
 Header.propTypes = {
-  title: PropTypes.string
+  title: PropTypes.string.isRequired,
 };
 
 Header.defaultProps = {};

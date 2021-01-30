@@ -9,16 +9,26 @@ import styles from './Button.module.scss';
  * @returns {*}
  * @constructor
  */
-const Button = ({text = 'Button', onClick}) => (
-  <div className={styles.Button} data-testid="Button" onClick={onClick}>
+const Button = ({ text, onClick }) => (
+  <div
+    className={styles.Button}
+    data-testid="Button"
+    onClick={onClick}
+    onKeyPress={onClick}
+    role="button"
+    tabIndex="0"
+  >
     {text}
   </div>
 );
 
 Button.propTypes = {
-  text : PropTypes.string.isRequired
+  text: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
 };
 
-Button.defaultProps = {};
+Button.defaultProps = {
+  onClick: () => {},
+};
 
 export default Button;

@@ -1,8 +1,8 @@
 .Button {
   width: 109px;
   height: 33px;
-  background-color: #0073E6;
-  color: #FFFFFF;
+  background-color: #0073e6;
+  color: #fff;
   box-sizing: border-box;
   padding: 6px 8px;
   border-radius: 4px;
@@ -12,12 +12,10 @@
   cursor: pointer;
 
   .small {
-
+    // TODO:
   }
 
   @media (max-width: 1080px) {
-
     width: 50px;
-
   }
 }

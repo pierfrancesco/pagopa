@@ -22,12 +22,11 @@
 
   @media (max-width: 1080px) {
     .Content {
-        flex-direction: column;
+      flex-direction: column;
     }
   }
 
   @media (max-width: 640px) {
     font-size: 10px;
   }
-
 }

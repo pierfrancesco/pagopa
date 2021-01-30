@@ -1,0 +1,328 @@
+[
+  {
+    "kind": "story",
+    "id": 146924107,
+    "created_at": "2017-06-09T12:40:21Z",
+    "updated_at": "2018-01-18T21:38:27Z",
+    "accepted_at": "2017-06-09T12:40:26Z",
+    "estimate": 2,
+    "story_type": "feature",
+    "name": "Come CIT voglio poter cambiare la mia password SPID accedendo all'IDP dalla schermata delle preferenze",
+    "current_state": "accepted",
+    "requested_by_id": 2922733,
+    "url": "https://www.pivotaltracker.com/story/show/146924107",
+    "project_id": 2048617,
+    "owner_ids": [
+      2922733
+    ],
+    "labels": [
+      {
+        "id": 19656266,
+        "project_id": 2048617,
+        "kind": "label",
+        "name": "epic-preferenze",
+        "created_at": "2018-01-18T13:51:17Z",
+        "updated_at": "2018-01-18T13:51:17Z"
+      },
+      {
+        "id": 18614327,
+        "project_id": 2048617,
+        "kind": "label",
+        "name": "spid",
+        "created_at": "2017-06-09T12:28:01Z",
+        "updated_at": "2017-06-09T12:28:01Z"
+      }
+    ],
+    "owned_by_id": 2922733
+  },
+  {
+    "kind": "story",
+    "id": 147176989,
+    "created_at": "2017-06-14T07:26:13Z",
+    "updated_at": "2017-11-14T11:43:46Z",
+    "accepted_at": "2017-06-19T11:44:00Z",
+    "deadline": "2017-06-30T10:00:00Z",
+    "story_type": "release",
+    "name": "Closed beta app mobile",
+    "current_state": "accepted",
+    "requested_by_id": 2922733,
+    "url": "https://www.pivotaltracker.com/story/show/147176989",
+    "project_id": 2048617,
+    "owner_ids": [
+      2922733
+    ],
+    "labels": [],
+    "owned_by_id": 2922733
+  },
+  {
+    "kind": "story",
+    "id": 147586371,
+    "created_at": "2017-06-21T10:32:13Z",
+    "updated_at": "2017-11-14T12:46:36Z",
+    "accepted_at": "2017-06-21T10:33:15Z",
+    "story_type": "chore",
+    "name": "Almeno 10 persone hanno installato ItaliaApp",
+    "current_state": "accepted",
+    "requested_by_id": 2922733,
+    "url": "https://www.pivotaltracker.com/story/show/147586371",
+    "project_id": 2048617,
+    "owner_ids": [
+      2922733
+    ],
+    "labels": [
+      {
+        "id": 18696573,
+        "project_id": 2048617,
+        "kind": "label",
+        "name": "epic-beta",
+        "created_at": "2017-06-21T10:29:07Z",
+        "updated_at": "2017-11-14T12:46:18Z"
+      }
+    ],
+    "owned_by_id": 2922733
+  },
+  {
+    "kind": "story",
+    "id": 147183565,
+    "created_at": "2017-06-14T09:30:25Z",
+    "updated_at": "2017-06-21T15:07:39Z",
+    "accepted_at": "2017-06-21T15:07:39Z",
+    "deadline": "2017-09-30T10:00:00Z",
+    "story_type": "release",
+    "name": "API integration with early adopters",
+    "current_state": "accepted",
+    "requested_by_id": 2922733,
+    "url": "https://www.pivotaltracker.com/story/show/147183565",
+    "project_id": 2048617,
+    "owner_ids": [
+      2922733,
+      2882149
+    ],
+    "labels": [
+      {
+        "id": 18645393,
+        "project_id": 2048617,
+        "kind": "label",
+        "name": "epic-api-integration",
+        "created_at": "2017-06-14T09:07:46Z",
+        "updated_at": "2017-06-21T10:41:00Z"
+      }
+    ],
+    "owned_by_id": 2922733
+  },
+  {
+    "kind": "story",
+    "id": 147182143,
+    "created_at": "2017-06-14T09:00:21Z",
+    "updated_at": "2018-01-18T21:39:38Z",
+    "accepted_at": "2017-06-26T12:30:45Z",
+    "story_type": "chore",
+    "name": "Definire KPI di progetto",
+    "description": "Dobbiamo definire delle metriche per monitorare lo stato del progetto e i progressi.",
+    "current_state": "accepted",
+    "requested_by_id": 2922733,
+    "url": "https://www.pivotaltracker.com/story/show/147182143",
+    "project_id": 2048617,
+    "owner_ids": [
+      2922733,
+      2882149
+    ],
+    "labels": [
+      {
+        "id": 18723897,
+        "project_id": 2048617,
+        "kind": "label",
+        "name": "epic-analytics",
+        "created_at": "2017-06-25T09:00:28Z",
+        "updated_at": "2017-06-25T09:00:28Z"
+      }
+    ],
+    "owned_by_id": 2922733
+  },
+  {
+    "kind": "story",
+    "id": 147586351,
+    "created_at": "2017-06-21T10:31:50Z",
+    "updated_at": "2017-11-14T12:46:36Z",
+    "accepted_at": "2017-06-26T12:32:22Z",
+    "story_type": "chore",
+    "name": "Almeno 20 persone hanno installato ItaliaApp",
+    "description": "Lo spreadsheet con le persone invitate ora è [qui](https://docs.google.com/spreadsheets/d/1AbQViMvZrJrqNGq-UxsOg37ZRdDbxjWV3vgq_7osPLk/edit#gid=0).\n\nAggiungere le persone (di TTD o di AgID) con indirizzo di e-mail (qualsiasi in caso di iOS e quello specifico usato per registrarsi a Google Play in caso di Android).",
+    "current_state": "accepted",
+    "requested_by_id": 2922733,
+    "url": "https://www.pivotaltracker.com/story/show/147586351",
+    "project_id": 2048617,
+    "owner_ids": [
+      2922733,
+      2929591
+    ],
+    "labels": [
+      {
+        "id": 18696573,
+        "project_id": 2048617,
+        "kind": "label",
+        "name": "epic-beta",
+        "created_at": "2017-06-21T10:29:07Z",
+        "updated_at": "2017-11-14T12:46:18Z"
+      }
+    ],
+    "owned_by_id": 2922733
+  },
+  {
+    "kind": "story",
+    "id": 147805681,
+    "created_at": "2017-06-25T09:02:12Z",
+    "updated_at": "2017-11-14T12:45:14Z",
+    "accepted_at": "2017-06-28T17:06:33Z",
+    "story_type": "chore",
+    "name": "Setup account su MixPanel",
+    "description": "Sarei propensi ad usare il [piano free di MixPanel engagement](https://mixpanel.com/pricing/#engagement) che è molto potente per capire flussi di utenza, funnels, retention, cohort analysis, etc...",
+    "current_state": "accepted",
+    "requested_by_id": 2922733,
+    "url": "https://www.pivotaltracker.com/story/show/147805681",
+    "project_id": 2048617,
+    "owner_ids": [
+      2922733
+    ],
+    "labels": [
+      {
+        "id": 18723897,
+        "project_id": 2048617,
+        "kind": "label",
+        "name": "epic-analytics",
+        "created_at": "2017-06-25T09:00:28Z",
+        "updated_at": "2017-06-25T09:00:28Z"
+      }
+    ],
+    "owned_by_id": 2922733
+  },
+  {
+    "kind": "story",
+    "id": 147805691,
+    "created_at": "2017-06-25T09:03:26Z",
+    "updated_at": "2017-11-14T12:45:14Z",
+    "accepted_at": "2017-06-29T11:55:49Z",
+    "story_type": "chore",
+    "name": "Integrare SDK MixPanel nell'app",
+    "description": "È disponibile [un plugin per integrarlo in react-native](https://github.com/davodesign84/react-native-mixpanel). ",
+    "current_state": "accepted",
+    "requested_by_id": 2922733,
+    "url": "https://www.pivotaltracker.com/story/show/147805691",
+    "project_id": 2048617,
+    "owner_ids": [
+      2933367
+    ],
+    "labels": [
+      {
+        "id": 18723897,
+        "project_id": 2048617,
+        "kind": "label",
+        "name": "epic-analytics",
+        "created_at": "2017-06-25T09:00:28Z",
+        "updated_at": "2017-06-25T09:00:28Z"
+      }
+    ],
+    "owned_by_id": 2933367
+  },
+  {
+    "kind": "story",
+    "id": 154356854,
+    "created_at": "2018-01-16T11:26:19Z",
+    "updated_at": "2018-03-06T10:24:59Z",
+    "accepted_at": "2018-03-06T10:24:59Z",
+    "estimate": 1,
+    "story_type": "feature",
+    "name": "Design pagina di login SPID (scelta IdP)",
+    "current_state": "accepted",
+    "requested_by_id": 2922733,
+    "url": "https://www.pivotaltracker.com/story/show/154356854",
+    "project_id": 2048617,
+    "owner_ids": [
+      2926483
+    ],
+    "labels": [
+      {
+        "id": 18815627,
+        "project_id": 2048617,
+        "kind": "label",
+        "name": "epic-user-onboarding",
+        "created_at": "2017-07-10T08:11:14Z",
+        "updated_at": "2017-11-14T12:46:25Z"
+      },
+      {
+        "id": 18614327,
+        "project_id": 2048617,
+        "kind": "label",
+        "name": "spid",
+        "created_at": "2017-06-09T12:28:01Z",
+        "updated_at": "2017-06-09T12:28:01Z"
+      }
+    ],
+    "owned_by_id": 2926483
+  },
+  {
+    "kind": "story",
+    "id": 155734996,
+    "created_at": "2018-03-06T09:28:10Z",
+    "updated_at": "2018-03-07T16:39:55Z",
+    "accepted_at": "2018-03-07T16:39:55Z",
+    "estimate": 0,
+    "story_type": "feature",
+    "name": "Il layout dell'app deve essere essere bloccato su portrait",
+    "description": "Il layout dell'applicazione deve essere bloccato in modalità portrait",
+    "current_state": "accepted",
+    "requested_by_id": 2926483,
+    "url": "https://www.pivotaltracker.com/story/show/155734996",
+    "project_id": 2048617,
+    "owner_ids": [
+      3314808
+    ],
+    "labels": [
+      {
+        "id": 19642057,
+        "project_id": 2048617,
+        "kind": "label",
+        "name": "epic-design",
+        "created_at": "2018-01-16T11:30:54Z",
+        "updated_at": "2018-01-16T11:30:54Z"
+      }
+    ],
+    "owned_by_id": 3314808
+  },
+  {
+    "kind": "story",
+    "id": 155777750,
+    "created_at": "2018-03-07T14:01:49Z",
+    "updated_at": "2018-03-07T16:40:01Z",
+    "accepted_at": "2018-03-07T16:40:01Z",
+    "estimate": 2,
+    "story_type": "feature",
+    "name": "Aggiornare react-native all'ultima versione",
+    "description": "Per utilizzare l'ultima versione di flow/flow-bin è necessario aggiornare anche react-native",
+    "current_state": "accepted",
+    "requested_by_id": 3314808,
+    "url": "https://www.pivotaltracker.com/story/show/155777750",
+    "project_id": 2048617,
+    "owner_ids": [],
+    "labels": []
+  },
+  {
+    "kind": "story",
+    "id": 155873674,
+    "created_at": "2018-03-10T09:04:08Z",
+    "updated_at": "2018-03-12T08:21:15Z",
+    "accepted_at": "2018-03-12T08:21:15Z",
+    "estimate": 2,
+    "story_type": "feature",
+    "name": "Tutto ciò che riguarda lo store redux deve essere tipizzato utilizzando Flow",
+    "current_state": "accepted",
+    "requested_by_id": 3314808,
+    "url": "https://www.pivotaltracker.com/story/show/155873674",
+    "project_id": 2048617,
+    "owner_ids": [
+      3314808
+    ],
+    "labels": [],
+    "owned_by_id": 3314808
+  }
+]

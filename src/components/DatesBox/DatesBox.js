@@ -4,35 +4,38 @@ import styles from './DatesBox.module.scss';
 
 /**
  *
- * @param created_at
- * @param accepted_at
- * @param updated_at
+ * @param createdAt
+ * @param acceptedAt
+ * @param updatedAt
  * @returns {*}
  * @constructor
  */
-const DatesBox = ({created_at, accepted_at, updated_at}) => (
+const DatesBox = ({ createdAt, acceptedAt, updatedAt }) => (
   <div className={styles.DatesBox} data-testid="DatesBox">
     <div>
       <span className={styles.Label}>Created:</span>
-      <span className="Value">{created_at}</span>
+      <span className="Value">{createdAt}</span>
     </div>
     <div>
       <span className={styles.Label}>Accepted:</span>
-      <span className="Value">{accepted_at}</span>
+      <span className="Value">{acceptedAt}</span>
     </div>
     <div>
       <span className={styles.Label}>Updated:</span>
-      <span className="Value">{updated_at}</span>
+      <span className="Value">{updatedAt}</span>
     </div>
   </div>
 );
 
 DatesBox.propTypes = {
-  created_at: PropTypes.string.isRequired,
-  accepted_at: PropTypes.string,
-  updated_at: PropTypes.string
+  createdAt: PropTypes.string.isRequired,
+  acceptedAt: PropTypes.string,
+  updatedAt: PropTypes.string,
 };
 
-DatesBox.defaultProps = {};
+DatesBox.defaultProps = {
+  acceptedAt: null,
+  updatedAt: null,
+};
 
 export default DatesBox;

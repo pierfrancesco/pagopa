@@ -6,7 +6,7 @@ import InfoBox from './InfoBox';
 describe('<InfoBox />', () => {
   test('it should mount', () => {
     render(<InfoBox />);
-    
+
     const infoBox = screen.getByTestId('InfoBox');
 
     expect(infoBox).toBeInTheDocument();

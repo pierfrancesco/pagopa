@@ -9,17 +9,19 @@ import styles from './Tag.module.scss';
  * @returns {*}
  * @constructor
  */
-const Tag = ({name = 'Tag', color}) => (
-  <div className={styles.Tag + " " + styles[color]} data-testid="Tag">
+const Tag = ({ name, color }) => (
+  <div className={`${styles.Tag} ${color ? styles[color] : ''}`} data-testid="Tag">
     {name}
   </div>
 );
 
 Tag.propTypes = {
-  name : PropTypes.string.isRequired,
-  color : PropTypes.string
+  name: PropTypes.string.isRequired,
+  color: PropTypes.string,
 };
 
-Tag.defaultProps = {};
+Tag.defaultProps = {
+  color: null,
+};
 
 export default Tag;

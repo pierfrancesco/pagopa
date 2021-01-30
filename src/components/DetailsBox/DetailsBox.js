@@ -1,14 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './DetailsBox.module.scss';
-import Tag from '../Tag/Tag'
 
-const DetailsBox = ({name, project_id, owned_by_id, requested_by_id}) => (
+const DetailsBox = ({
+  name, projectId, ownedById, requestedById,
+}) => (
   <div className={styles.DetailsBox} data-testid="DetailsBox">
     <div className={styles.Content}>
-      <span className={"Label"}>Project:{project_id}</span>
-      <span>Owned By:{owned_by_id}</span>
-      <span>Requested by:{requested_by_id}</span>
+      <span className="Label">
+        Project:
+        {projectId}
+      </span>
+      <span>
+        Owned By:
+        {ownedById}
+      </span>
+      <span>
+        Requested by:
+        {requestedById}
+      </span>
     </div>
     <div className={styles.Description}>
       <span>{name}</span>
@@ -17,10 +27,10 @@ const DetailsBox = ({name, project_id, owned_by_id, requested_by_id}) => (
 );
 
 DetailsBox.propTypes = {
-  name : PropTypes.string.isRequired,
-  project_id : PropTypes.string.isRequired,
-  owned_by_id: PropTypes.string.isRequired,
-  requested_by_id: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
+  projectId: PropTypes.string.isRequired,
+  ownedById: PropTypes.string.isRequired,
+  requestedById: PropTypes.string.isRequired,
 };
 
 DetailsBox.defaultProps = {};

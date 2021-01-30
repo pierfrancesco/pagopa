@@ -6,7 +6,7 @@ import DetailsBox from './DetailsBox';
 describe('<DetailsBox />', () => {
   test('it should mount', () => {
     render(<DetailsBox />);
-    
+
     const detailsBox = screen.getByTestId('DetailsBox');
 
     expect(detailsBox).toBeInTheDocument();
