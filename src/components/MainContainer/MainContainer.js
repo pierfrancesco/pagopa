@@ -75,7 +75,6 @@ const MainContainer = ({ storiesList = [] }) => {
         .filter((story) => String(story.owned_by_id) === String(filterBy.value));
       break;
     default:
-      console.log('Reset filter');
     // YOLO
   }
 
