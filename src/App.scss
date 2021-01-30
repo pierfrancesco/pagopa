@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Titillium Web';
+  src: url('assets/fonts/TitilliumWeb-Regular.ttf');
+}
+
+* {
+  font-family: 'Titillium Web', Arial, serif;
+}
+
+html, body, #root {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}

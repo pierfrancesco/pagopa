@@ -1,0 +1,22 @@
+.Header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  background-color: #0066CC;
+  color: #FFFFFF;
+  box-shadow: 1px 1px 11px 1px grey;
+  font-family: 'Titillium Web Black', Arial, serif;
+  font-size: 16px;
+
+  .AppName {
+    margin-left: 20px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+    .AppName {
+      margin-left: 10px;
+    }
+  }
+}
