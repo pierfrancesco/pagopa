@@ -16,7 +16,10 @@ The app has been developed with React, in particular with the following tools:
 - `Generate React CLI` (for generate components similar to what ng cli does, plus you get *.stories.js file for free)
 - `stylelint` & `eslint` for review code from broken basic rules.
 
-The project is liked to a codesandbox space at this link: PLACE_HERE_THE_CODE
+The project is liked to a codesandbox space at these links:
+
+- full code sandbox: https://codesandbox.io/s/headless-frog-545t1
+- preview: https://545t1.csb.app/
 
 ## Resources
 

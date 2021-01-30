@@ -4,6 +4,9 @@ import Header from './components/Header/Header';
 import MainContainer from './components/MainContainer/MainContainer';
 import Loader from './components/Loader/Loader';
 
+// fallback list:
+import storiesMockup from './assets/storiesMock.json';
+
 const App = () => {
   const [storiesList, setStoriesList] = useState([]);
   const [showLoader, setShowLoader] = useState(true);
@@ -13,6 +16,9 @@ const App = () => {
       .then((res) => res.json())
       .then((list) => {
         setStoriesList(list);
+        setShowLoader(false);
+      }).catch(() => {
+        setStoriesList(storiesMockup);
         setShowLoader(false);
       });
   }, []);
