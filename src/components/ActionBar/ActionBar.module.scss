@@ -5,7 +5,8 @@
   box-sizing: border-box;
   padding: 10px 20px;
   width: 100%;
-  min-height: 50px;
+  margin: 15px;
+  flex-wrap: wrap;
 
   .LeftSideContent {
 
@@ -14,9 +15,51 @@
   .RightSideContent {
     display: flex;
     justify-content: space-between;
+
+    .Sort {
+      display: flex;
+
+      span {
+        margin-right: 10px;
+        font-family: 'Titillium Web Black', Arial, serif;
+      }
+
+      div {
+        margin-right: 10px;
+        cursor: pointer;
+        border-right: 1px solid grey;
+        padding-right: 10px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .Filter {
+      display: flex;
+
+      span {
+        margin-right: 10px;
+        font-family: 'Titillium Web Black', Arial, serif;
+      }
+
+      div {
+        margin-right: 10px;
+        cursor: pointer;
+        border-right: 1px solid grey;
+        padding-right: 10px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
 
-  @media (max-width: 480px) {
-    flex-direction: column;
+  @media (max-width: 640px) {
+    .RightSideContent {
+      flex-direction: column;
+    }
   }
 }

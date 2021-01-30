@@ -9,10 +9,11 @@ import Filter from '../Filter/Filter';
  * @param actionBarTitle
  * @param filters
  * @param setSortBy
+ * @param setFilterBy
  * @returns {*}
  * @constructor
  */
-const ActionBar = ({actionBarTitle = 'ActionBar Title', filters = {}, setSortBy = () => {}}) => {
+const ActionBar = ({actionBarTitle = 'ActionBar Title', filters = {}, setSortBy = () => {}, setFilterBy}) => {
 
   const [enabledFilters, setEnabledFilters] = useState([]);
   const [asc, setAsc] = useState(true);
@@ -35,20 +36,22 @@ const ActionBar = ({actionBarTitle = 'ActionBar Title', filters = {}, setSortBy 
     setAsc(!asc);
   }
 
+
   return <div className={styles.ActionBar} data-testid="ActionBar">
     <div className={styles.LeftSideContent}>
       {actionBarTitle}
     </div>
     <div className={styles.RightSideContent}>
-      <div>
-        Sort by:
+      <div className={styles.Sort}>
+        <span> Sort by: </span>
         <div onClick={() => sendSortToParent('created_at')}>Create Date</div>
         <div onClick={() => sendSortToParent('accepted_at')}>Accepted Date</div>
         <div onClick={() => sendSortToParent('updated_at')}>Updated Date</div>
       </div>
-      <div>
-        Filters:
-        {enabledFilters.map(filter => <Filter key={"key_" + filter.name} name={filter.name} options={filter.options}/>)}
+      <div className={styles.Filter}>
+        <span> Filters: </span>
+        {enabledFilters.map(filter => <Filter key={"key_" + filter.name} name={filter.name} options={filter.options} setFilterBy={setFilterBy}/>)}
+        <span onClick={()=> setFilterBy({field:null})}>Clear</span>
       </div>
 
     </div>

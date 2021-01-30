@@ -15,6 +15,8 @@ const MainContainer = ({storiesList = []}) => {
 
   const [filters, setFilters] = useState({});
   const [sortBy, setSortBy] = useState({field: null, asc: false});
+  const [filterBy, setFilterBy] = useState({field: null, value: null});
+
   let tempStoryList = [];
 
   const sortByCreatedDate = (a, b, ascOrder) => {
@@ -45,11 +47,11 @@ const MainContainer = ({storiesList = []}) => {
       "owned_by_id": {},
     };
     storiesList.forEach(story => {
-      _tempFilters.story_type[story.story_type] = 1;
+      _tempFilters.story_type[story.story_type] =  1;
       _tempFilters.owned_by_id[story.owned_by_id] = 1;
     });
     setFilters(_tempFilters);
-  }, []);
+  }, [storiesList]);
 
   tempStoryList = storiesList;
 
@@ -67,8 +69,19 @@ const MainContainer = ({storiesList = []}) => {
     //YOLO
   }
 
+  switch (filterBy.field) {
+    case 'story_type':
+      tempStoryList = tempStoryList.filter(story => story["story_type"] === filterBy.value);
+      break;
+    case 'owned_by_id':
+      tempStoryList = tempStoryList.filter(story => story["owned_by_id"] == filterBy.value);
+      break;
+    default:
+    //YOLO
+  }
+
   return <div className={styles.MainContainer} data-testid="MainContainer">
-    <ActionBar actionBarTitle={"Stories"} filters={filters} setSortBy={setSortBy}/>
+    <ActionBar actionBarTitle={"Stories"} filters={filters} setSortBy={setSortBy} setFilterBy={setFilterBy}/>
     {
       tempStoryList.map(story => <Card cardInfo={story}/>)
     }

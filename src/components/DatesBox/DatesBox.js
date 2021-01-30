@@ -12,16 +12,25 @@ import styles from './DatesBox.module.scss';
  */
 const DatesBox = ({created_at, accepted_at, updated_at}) => (
   <div className={styles.DatesBox} data-testid="DatesBox">
-    <span>Created:   {created_at}</span>
-    <span>Accepted:   {accepted_at}</span>
-    <span>Updated:   {updated_at}</span>
+    <div>
+      <span className={styles.Label}>Created:</span>
+      <span className="Value">{created_at}</span>
+    </div>
+    <div>
+      <span className={styles.Label}>Accepted:</span>
+      <span className="Value">{accepted_at}</span>
+    </div>
+    <div>
+      <span className={styles.Label}>Updated:</span>
+      <span className="Value">{updated_at}</span>
+    </div>
   </div>
 );
 
 DatesBox.propTypes = {
-  created_at : PropTypes.string.isRequired,
-  accepted_at : PropTypes.string,
-  updated_at : PropTypes.string
+  created_at: PropTypes.string.isRequired,
+  accepted_at: PropTypes.string,
+  updated_at: PropTypes.string
 };
 
 DatesBox.defaultProps = {};

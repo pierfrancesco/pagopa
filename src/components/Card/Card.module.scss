@@ -10,4 +10,16 @@
   box-sizing: border-box;
   padding: 10px 20px;
   margin: 5px;
+
+  &:hover {
+    box-shadow: 0 0 16px #00699991;
+  }
+
+  @media (max-width: 1080px) {
+    height: 150px;
+  }
+
+  @media (max-width: 640px) {
+    padding: 5px 10px;
+  }
 }

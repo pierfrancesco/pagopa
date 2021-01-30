@@ -1,0 +1,38 @@
+.Tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  width: max-content;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #0066CC;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 3px 8px;
+  font-weight: 700;
+
+  &.Acqua {
+    background-color: #008C88;
+  }
+
+  &.Green {
+    background-color: #00B374;
+  }
+
+  &.Violet {
+    background-color: #0900AD;
+  }
+
+  &.Orange {
+    background-color: #FF9700;
+  }
+
+  &.Red {
+    background-color: #D1344C;
+  }
+
+  &.Grey {
+    background-color: #17324D;
+  }
+}
